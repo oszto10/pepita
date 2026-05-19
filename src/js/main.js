@@ -1,3 +1,5 @@
+import '../styles/main.scss';
+
 
 const menuButton = document.querySelector('.js-menu-button');
 const offcanvasMenu = document.querySelector('.js-offcanvas');

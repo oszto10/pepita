@@ -7,7 +7,90 @@
     <title>Collections</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <section class="collections">
+        <div class="container">
+            <header class="header">
+                <div class="logo-container">
+                    <span>THE ART MUSEUM</span>
+                </div>
+                <h1 class="page-title">Collections</h1>
+                <button class="collections__menu-button" type="button" aria-label="Open menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Menu">
+                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z" fill="black"/>
+                        </g>
+                    </svg>
+                </button>
+                <ul class="menu">
+                    <li class="menu item">
+                        <label class="collections__search-label" for="collection-search">
+                            Search
+                        </label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Exhibitions & Events</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Artists & Artworks</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Collections</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Plan Your Visit</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Become a Member</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Shop</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="search__container">
+                <form class="collections__search">
+                    <label class="collections__search-label" for="collection-search">
+                    Explore the Collection
+                    </label>
+                    <input id="collection-search" type="search" aria-label="Search collection" />
+                    <button type="submit" aria-label="Search">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.36396 14.1569C9.48815 17.2811 14.5535 17.2811 17.6777 14.1569C20.8019 11.0327 20.8019 5.96735 17.6777 2.84315C14.5535 -0.281049 9.48815 -0.281049 6.36396 2.84315C3.23976 5.96735 3.23976 11.0327 6.36396 14.1569ZM6.36396 14.1569L0.707099 19.8137" stroke="white" stroke-linecap="square"/>
+                        </svg>
+                    </button>
+                </form>
+                <a class="search__advanced-search" href="#">Advanced Search</a>
+            </div>
+            <div class="collections__item_container">
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+                <div class="collections__item">
+                    <img src="" alt="" class="collections__image">
+                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

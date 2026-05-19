@@ -3,3 +3,8 @@
 @use './components/menu';
 @use './pages/collections';
 @use './pages/tickets';
+@use './components/header';
+
+.container {
+    padding: 12px;
+}
