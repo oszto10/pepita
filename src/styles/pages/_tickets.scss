@@ -1,0 +1,128 @@
+.tickets__title {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 275px;
+}
+
+.tickets__description {
+    color: $project-red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    max-width: 270px;
+    margin-bottom: 10px;
+}
+
+.tickets__day-selector {
+    justify-content: space-between;
+    display: flex;
+    padding: 0 25px 0 15px;
+    position:relative;
+    width: 100%;
+    border-bottom: 2px solid #D4D4D4;
+    margin-bottom: 4px;
+}
+
+.tickets__today,
+.tickets__tomorrow,
+.tickets__other {
+    color: #D4D4D4;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 16px 0 6px;
+}
+
+.active-day-selector {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $hihglighted-black;
+    padding: 10px 0 12px;
+    border-bottom: 3px solid $project-red;
+}
+
+.tickets__ticket-type-container {
+    padding: 0 20px 48px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-bottom: 3px solid $project-red;
+}
+
+.tickets__ticket-types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 53px;
+}
+
+.tickets__ticket-type-title {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.tickets__ticket-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets__ticket-type-note {
+    color: #D4D4D4;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.tickets__ticket-number-container {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.tickets__ticket-number {
+    color: #000;
+    font-size: 18px;
+}
+
+.tickets__ticket-minus,
+.tickets__ticket-plus {
+    border: 0;
+    background-color: transparent;
+    color: #D4D4D4;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D4D4D4;
+}
+
+.tickets__payment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 32px 16px 16px;
+    margin-bottom: 20px;
+}
+
+.tickets__payment-button {
+    display: flex;
+    margin: 0 auto;
+    background-color: $project-red;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    width: 248px;
+    height: 42px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}

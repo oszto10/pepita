@@ -1,8 +1,32 @@
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 12px 0;
+    margin-bottom: 12px;
 
     .logo-container {
-        width: 50px;
+        width: 43px;
+
+        span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            display: block;
+            line-height: 1.37;
+            color: #000;
+            text-transform: uppercase;
+        }
+    }
+
+    .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: $project-red;
+    }
+
+    .collections__menu-button {
+        background-color: transparent;
+        cursor: pointer;
+        border: 0;
     }
 }

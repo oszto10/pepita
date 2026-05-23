@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
     <title>Collections</title>
   </head>
   <body>
@@ -48,44 +55,41 @@
                     </li>
                 </ul>
             </header>
-            <div class="search__container">
-                <form class="collections__search">
-                    <label class="collections__search-label" for="collection-search">
-                    Explore the Collection
-                    </label>
-                    <input id="collection-search" type="search" aria-label="Search collection" />
-                    <button type="submit" aria-label="Search">
-                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.36396 14.1569C9.48815 17.2811 14.5535 17.2811 17.6777 14.1569C20.8019 11.0327 20.8019 5.96735 17.6777 2.84315C14.5535 -0.281049 9.48815 -0.281049 6.36396 2.84315C3.23976 5.96735 3.23976 11.0327 6.36396 14.1569ZM6.36396 14.1569L0.707099 19.8137" stroke="white" stroke-linecap="square"/>
+            <div class="collections__search-container">
+                <form class="collections__search-form">
+                    <input name="collections__search" class="collections__search" placeholder="Explore the Collection" aria-label="Search collection" />
+                    <button class="collections__search-button" aria-label="Search">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.36396 14.1569C9.48815 17.2811 14.5535 17.2811 17.6777 14.1569C20.8019 11.0327 20.8019 5.96735 17.6777 2.84315C14.5535 -0.281049 9.48815 -0.281049 6.36396 2.84315C3.23976 5.96735 3.23976 11.0327 6.36396 14.1569ZM6.36396 14.1569L0.707099 19.8137" stroke="currentColor" stroke-linecap="square"/>
                         </svg>
                     </button>
                 </form>
-                <a class="search__advanced-search" href="#">Advanced Search</a>
+                <a class="collections__advanced-search" href="#">Advanced Search</a>
             </div>
             <div class="collections__item_container">
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-1.png" alt="" class="collections__image">
+                    <h2 class="collections__title narrow">DECORATIVE ARTS & CRAFTS</h2>
                 </div>
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-2.png" alt="" class="collections__image">
+                    <h2 class="collections__title narrow">AMERICAN IMPRESSIONISM</h2>
                 </div>
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-3.png" alt="" class="collections__image">
+                    <h2 class="collections__title">DE STIJL</h2>
                 </div>
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-4.png" alt="" class="collections__image">
+                    <h2 class="collections__title">CUBISM</h2>
                 </div>
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-5.png" alt="" class="collections__image">
+                    <h2 class="collections__title narrow">AMERICAN PHOTOGRAPHY</h2>
                 </div>
                 <div class="collections__item">
-                    <img src="" alt="" class="collections__image">
-                    <h2 class="collections__title">DECORATIVE ARTS & CRAFTS </h2>
+                    <img src="/src/assets/images/collections-6.png" alt="" class="collections__image">
+                    <h2 class="collections__title">GREEK ANTIQUITIES</h2>
                 </div>
             </div>
         </div>

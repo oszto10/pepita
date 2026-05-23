@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <title>Tickets</title>
+  </head>
+  <body>
+    <section class="tickets">
+        <div class="container">
+            <header class="header">
+                <div class="logo-container">
+                    <span>The Art Museum</span>
+                </div>
+                <h1 class="page-title">Plan Your Visit</h1>
+                <button class="collections__menu-button" type="button" aria-label="Open menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Menu">
+                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z" fill="black"/>
+                        </g>
+                    </svg>
+                </button>
+                <ul class="menu">
+                    <li class="menu item">
+                        <label class="collections__search-label" for="collection-search">
+                            Search
+                        </label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Exhibitions & Events</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Artists & Artworks</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Collections</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Plan Your Visit</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Become a Member</a>
+                    </li>
+                    <li>
+                        <a href="" class="menu-item">Shop</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="tickets___container">
+                <h1 class="tickets__title">Skip the Line. Purchase Tickets<h1>
+                <h3 class="tickets__description">All exhibitions, audio tours, and films included in the price of admission.</h3>
+                <div class="tickets__day-selector">
+                    <button class="tickets__today">Today</button>
+                    <button class="tickets__tomorrow active-day-selector">Tomorrow</button>
+                    <button class="tickets__other">Other</button>
+                </div>
+                <div class="tickets__ticket-types">
+                    <p class="tickets__programme-date">March 22, 2016</p>
+                    <p class="tickets__programme-time">Open 10:30am-5:30pm</p>
+                </div>
+                <div class="tickets__ticket-type-container">
+                    <div class="tickets__ticket-type">
+                        <p class="tickets__ticket-type-name">Adult</p>
+                        <div class="tickets__ticket-number-container">
+                            <button class="tickets__ticket-minus">-</button>
+                            <p class="tickets__ticket-number">2</p>
+                            <button class="tickets__ticket-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="tickets__ticket-type">
+                        <div class="tickets__ticket-type-name">
+                            <p class="tickets__ticket-type-title">Seniors</p>
+                            <span class="tickets__ticket-type-note">65+ with ID</span>
+                        </div>
+                        <div class="tickets__ticket-number-container">
+                            <button class="tickets__ticket-minus">-</button>
+                            <p class="tickets__ticket-number">0</p>
+                            <button class="tickets__ticket-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="tickets__ticket-type">
+                        <div class="tickets__ticket-type-name">
+                            <p class="tickets__ticket-type-title">Students</p>
+                            <span class="tickets__ticket-type-note">with ID</span>
+                        </div>
+                        <div class="tickets__ticket-number-container">
+                            <button class="tickets__ticket-minus">-</button>
+                            <p class="tickets__ticket-number">0</p>
+                            <button class="tickets__ticket-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tickets__payment">
+                    <p class="ticket__payment-text">Total</p>
+                    <p class="ticket__payment-text">$16</p>
+                </div>
+                <button class="tickets__payment-button">Continue to Payment</button>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
