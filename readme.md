@@ -4,11 +4,11 @@ Egy reszponzív, modern múzeumi weboldal (Collections és Tickets felületek) s
 
 ## Demó
 Az elkészült projekt megtekinthető a GitHub Pages segítségével az alábbi linken:
-**[KATTINTS IDE AZ ÉLŐ OLDAL MEGTEKINTÉSÉHEZ](https://oszto10.github.io/pepita/)**
+**Élő oldal megtekintése: (https://oszto10.github.io/pepita/)**
 
 ---
 
-## 🛠️ Alkalmazott Technológiák
+## Alkalmazott Technológiák
 * **HTML5**
 * **SCSS (Sass)**
 * **Flexbox & Grid** – A modern és rugalmas elrendezésekért.
@@ -17,7 +17,7 @@ Az elkészült projekt megtekinthető a GitHub Pages segítségével az alábbi 
 
 ---
 
-## 📐 Megvalósított Funkciók 
+## Megvalósított Funkciók 
 * **Teljesen Reszponzív Dizájn:** Mobil, tablet és desktop nézetekre optimalizált felületek.
 * **Offcanvas Hamburger Menü:** Mobil nézetben kattintásra becsúszó, animált menü, amely a menün kívülre vagy a linkekre kattintva automatikusan bezáródik.
 * **UX / Navigáció:** A logó szövege linkesítve lett, így a jó gyakorlatnak megfelelően bármelyik aloldalról azonnal visszanavigál a főoldalra.
@@ -25,11 +25,12 @@ Az elkészült projekt megtekinthető a GitHub Pages segítségével az alábbi 
 
 ---
 
-## 💻 Helyi Futtatás
+## Helyi Futtatás
 
 Ha szeretnéd a saját gépeden is futtatni a projektet fejlesztői módban, futtasd le ezt a 3 parancsot egymás után a terminálodban:
 
 ```bash
-git clone [https://github.com/oszto10/pepita.git](https://github.com/oszto10/pepita.git)
+git clone https://github.com/oszto10/pepita.git
 npm install
 npm run dev
+```

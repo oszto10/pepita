@@ -29,6 +29,11 @@
             @include font(18px, 22px, $weight-regular, $white);
         }
 
+        .collections__search-input {
+            padding: 13px 8px;
+            color: $white;
+        }
+
         .menu-icon {
             background-color: $white;
             display: inline-block;

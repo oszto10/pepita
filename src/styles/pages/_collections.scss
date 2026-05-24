@@ -12,7 +12,7 @@
         .collections__search {
             border: 1px solid $project-red;
             margin-bottom: 6px;
-            min-width: 348px;
+            min-width: 248px;
             padding: 12px 8px 12px 10px;
             width: 100%;
 
@@ -39,6 +39,7 @@
             }
         }
     }
+
     .collections__advanced-search {
         @include font(12px, 24px, $weight-regular, $project-red);
         margin-bottom: 9px;
@@ -46,7 +47,7 @@
 }
 
 
-.collections__item_container {
+.collections__item-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px 18px;
@@ -72,7 +73,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-    .collections__item_container {
+    .collections__item-container {
         grid-template-columns: repeat(3, 1fr);
 
         .collections__title {
@@ -88,7 +89,7 @@
         margin-bottom: 32px;
 
         .collections__search-form {
-            max-width: 400px;
+            width: 400px;
         }
 
         .collections__advanced-search {
@@ -99,7 +100,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-    .collections__item_container {
+    .collections__item-container {
         gap: 24px;
 
         .collections__title {

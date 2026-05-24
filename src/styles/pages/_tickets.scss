@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 
-.tickets___container {
+.tickets__container {
     .tickets__title-container {
         .tickets__title {
             @include font(24px, 30px, $weight-regular, $black);
@@ -40,7 +40,7 @@
 
             .active-day-selector {
                 border-bottom: 3px solid $project-red;
-                color: $hihglighted-black;
+                color: $highlighted-black;
                 margin-bottom: -2px;
                 padding: 10px 0 12px;
                 position: relative;
@@ -106,7 +106,7 @@
             padding: 4px 32px 16px 16px;
             width: 100%;
 
-            .ticket__payment-text {
+            .tickets__payment-text {
                 @include font(18px, 1, $weight-regular, $black);
             }
         }
@@ -126,7 +126,7 @@
 
 
 @media screen and (min-width: $desktop) {
-    .tickets___container {
+    .tickets__container {
         .tickets__title-container {
             min-width: 350px;
 
