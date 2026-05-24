@@ -1,0 +1,20 @@
+@use './variables' as *; 
+
+@mixin icon-mask($filename) {
+    -webkit-mask: url('/src/assets/icons/#{$filename}') no-repeat center / contain;
+    mask: url('/src/assets/icons/#{$filename}') no-repeat center / contain;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font($size, $line-height: 1, $weight: $weight-regular, $color: null) {
+    font-family: $font-primary;
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+    @if $color { color: $color; }
+}

@@ -1,16 +1,17 @@
 import '../styles/main.scss';
 
+const menuButton = document.querySelector('.hamburger__menu-button');
+const menu = document.querySelector('.menu');
 
-const menuButton = document.querySelector('.js-menu-button');
-const offcanvasMenu = document.querySelector('.js-offcanvas');
-const overlay = document.querySelector('.js-overlay');
-
-menuButton?.addEventListener('click', () => {
-  offcanvasMenu.classList.toggle('is-open');
-  overlay.classList.toggle('is-visible');
+menuButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    menu.classList.toggle('menu-open');
 });
 
-overlay?.addEventListener('click', () => {
-  offcanvasMenu.classList.remove('is-open');
-  overlay.classList.remove('is-visible');
+window.addEventListener('click', (event) => {
+    if (menu.classList.contains('menu-open')) {
+        if (!menu.contains(event.target)) {
+            menu.classList.remove('menu-open');
+        }
+    }
 });

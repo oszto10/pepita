@@ -1,4 +1,109 @@
+@use '../abstracts/variables' as *; 
+@use '../abstracts/mixins' as *;
+
 .menu {
-    list-style-type: none;
-    display: none;
+    background-color: $project-red;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100vh;
+    left: -12px;
+    opacity: 0;
+    padding: 21px 25px 0 18px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
+    visibility: hidden; 
+    width: 310px;
+    z-index: 10;
+
+    .menu-item {
+        align-items: center;
+        display: flex !important;
+        gap: 20px;
+        position: relative;
+
+        .menu-item-link {
+            @include font(18px, 22px, $weight-regular, $white);
+        }
+
+        .menu-icon {
+            background-color: $white;
+            display: inline-block;
+            height: 24px;
+            vertical-align: middle;
+            width: 24px; 
+
+        }
+
+        .search-menu { 
+            @include icon-mask('search-white.svg');
+        }
+
+        .exhibitions-menu {
+            @include icon-mask('exhibitions.svg');
+        }
+
+        .artists-menu {
+            @include icon-mask('artists.svg');
+        }
+
+        .collections-menu {
+            @include icon-mask('collections.svg');
+        }
+
+        .plan-menu {
+            @include icon-mask('plan.svg');
+        }
+
+        .member-menu {
+            @include icon-mask('member.svg');
+        }
+
+        .shop-menu {
+            @include icon-mask('shop.svg');
+        }
+
+        .collections__search-label {
+            @include font(18px, 22px, $weight-regular, $white);
+            left: 58px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .collections__search-input {
+            background-color: $project-red;
+            border: 2px solid $white-border;
+            height: 42px;
+        }
+    }
+}
+
+.menu-open {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+@media screen and (min-width: $tablet) {
+    .menu {
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .menu {
+        display: flex;
+        left: 0;
+        opacity: 1;
+        position: fixed;
+        top: 0;
+        transform: translateX(0);
+        transition: none;
+        visibility: visible;
+    }
 }

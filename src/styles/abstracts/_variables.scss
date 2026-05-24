@@ -1,17 +1,23 @@
 // breakpoints
 
 $tablet: 768px;
-$desktop: 1280px;
+$desktop: 1024px;
 
 // fonts
 
 $font-primary: 'Montserrat', sans-serif;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
 
 // colors
 
 $white: #fff;
+$white-border:#FCFCFC;
 $black: #000;
-$project-red: #FF473A;
-$inactive-gray: #D4D4D4;
 $hihglighted-black: #050505;
+$inactive-gray: #D4D4D4;
+$project-red: #FF473A;
 

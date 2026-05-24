@@ -16,94 +16,103 @@
   <body>
     <section class="tickets">
         <div class="container">
-            <header class="header">
+             <header class="header">
                 <div class="logo-container">
-                    <span>The Art Museum</span>
+                    <a href="/" class="logo" aria-label="The Art Museum home">THE ART MUSEUM</a>
                 </div>
-                <h1 class="page-title">Plan Your Visit</h1>
-                <button class="collections__menu-button" type="button" aria-label="Open menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Menu">
-                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z" fill="black"/>
-                        </g>
-                    </svg>
+                <h1 class="page-title">Tickets</h1>
+                <button class="hamburger__menu-button" type="button" aria-label="Open menu">
+                   <i class="hamburger-menu"></i>
                 </button>
-                <ul class="menu">
-                    <li class="menu item">
+                <ul class="menu" hidden>
+                    <li class="menu-item">
+                        <i class="menu-icon search-menu"></i>
                         <label class="collections__search-label" for="collection-search">
                             Search
                         </label>
-                        <input type="text">
+                        <input class="collections__search-input" type="text">
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Exhibitions & Events</a>
+                    <li class="menu-item">
+                        <i class="menu-icon exhibitions-menu"></i>
+                        <a href="#" class="menu-item-link">Exhibitions & Events</a>
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Artists & Artworks</a>
+                    <li class="menu-item">
+                        <i class="menu-icon artists-menu"></i>
+                        <a href="#" class="menu-item-link">Artists & Artworks</a>
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Collections</a>
+                    <li class="menu-item">
+                        <i class="menu-icon collections-menu"></i>
+                        <a href="/collections.html" class="menu-item-link">Collections</a>
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Plan Your Visit</a>
+                    <li class="menu-item">
+                        <i class="menu-icon plan-menu"></i>
+                        <a href="#" class="menu-item-link">Plan Your Visit</a>
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Become a Member</a>
+                    <li class="menu-item">
+                        <i class="menu-icon member-menu"></i>
+                        <a href="#" class="menu-item-link">Become a Member</a>
                     </li>
-                    <li>
-                        <a href="" class="menu-item">Shop</a>
+                    <li class="menu-item">
+                        <i class="menu-icon shop-menu"></i>
+                        <a href="/tickets.html" class="menu-item-link">Shop</a>
                     </li>
                 </ul>
             </header>
             <div class="tickets___container">
-                <h1 class="tickets__title">Skip the Line. Purchase Tickets<h1>
-                <h3 class="tickets__description">All exhibitions, audio tours, and films included in the price of admission.</h3>
-                <div class="tickets__day-selector">
-                    <button class="tickets__today">Today</button>
-                    <button class="tickets__tomorrow active-day-selector">Tomorrow</button>
-                    <button class="tickets__other">Other</button>
+                <div class="tickets__title-container">
+                    <h1 class="tickets__title">Skip the Line. Purchase Tickets<h1>
+                    <h3 class="tickets__description">All exhibitions, audio tours, and films included in the price of admission.</h3>
                 </div>
-                <div class="tickets__ticket-types">
-                    <p class="tickets__programme-date">March 22, 2016</p>
-                    <p class="tickets__programme-time">Open 10:30am-5:30pm</p>
-                </div>
-                <div class="tickets__ticket-type-container">
-                    <div class="tickets__ticket-type">
-                        <p class="tickets__ticket-type-name">Adult</p>
-                        <div class="tickets__ticket-number-container">
-                            <button class="tickets__ticket-minus">-</button>
-                            <p class="tickets__ticket-number">2</p>
-                            <button class="tickets__ticket-plus">+</button>
+                <div class="tickets__ticket-container">
+                    <div class="tickets__day-selector">
+                        <button class="tickets__today">Today</button>
+                        <button class="tickets__tomorrow active-day-selector">Tomorrow</button>
+                        <button class="tickets__other">Other</button>
+                    </div>
+                    <div class="tickets__ticket-types">
+                        <p class="tickets__programme-date">March 22, 2016</p>
+                        <p class="tickets__programme-time">Open 10:30am-5:30pm</p>
+                    </div>
+                    <div class="tickets__ticket-type-container">
+                        <div class="tickets__ticket-type">
+                            <div class="tickets__ticket-type-name">
+                                <p class="tickets__ticket-type-title">Adult</p>
+                            </div>
+                            <div class="tickets__ticket-number-container">
+                                <button class="tickets__ticket-minus">-</button>
+                                <p class="tickets__ticket-number">2</p>
+                                <button class="tickets__ticket-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="tickets__ticket-type">
+                            <div class="tickets__ticket-type-name">
+                                <p class="tickets__ticket-type-title">Seniors</p>
+                                <span class="tickets__ticket-type-note">65+ with ID</span>
+                            </div>
+                            <div class="tickets__ticket-number-container">
+                                <button class="tickets__ticket-minus">-</button>
+                                <p class="tickets__ticket-number">0</p>
+                                <button class="tickets__ticket-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="tickets__ticket-type">
+                            <div class="tickets__ticket-type-name">
+                                <p class="tickets__ticket-type-title">Students</p>
+                                <span class="tickets__ticket-type-note">with ID</span>
+                            </div>
+                            <div class="tickets__ticket-number-container">
+                                <button class="tickets__ticket-minus">-</button>
+                                <p class="tickets__ticket-number">0</p>
+                                <button class="tickets__ticket-plus">+</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="tickets__ticket-type">
-                        <div class="tickets__ticket-type-name">
-                            <p class="tickets__ticket-type-title">Seniors</p>
-                            <span class="tickets__ticket-type-note">65+ with ID</span>
-                        </div>
-                        <div class="tickets__ticket-number-container">
-                            <button class="tickets__ticket-minus">-</button>
-                            <p class="tickets__ticket-number">0</p>
-                            <button class="tickets__ticket-plus">+</button>
-                        </div>
+                    <div class="tickets__payment">
+                        <p class="ticket__payment-text">Total</p>
+                        <p class="ticket__payment-text">$16</p>
                     </div>
-                    <div class="tickets__ticket-type">
-                        <div class="tickets__ticket-type-name">
-                            <p class="tickets__ticket-type-title">Students</p>
-                            <span class="tickets__ticket-type-note">with ID</span>
-                        </div>
-                        <div class="tickets__ticket-number-container">
-                            <button class="tickets__ticket-minus">-</button>
-                            <p class="tickets__ticket-number">0</p>
-                            <button class="tickets__ticket-plus">+</button>
-                        </div>
-                    </div>
+                    <button class="tickets__payment-button">Continue to Payment</button>
                 </div>
-                <div class="tickets__payment">
-                    <p class="ticket__payment-text">Total</p>
-                    <p class="ticket__payment-text">$16</p>
-                </div>
-                <button class="tickets__payment-button">Continue to Payment</button>
             </div>
         </div>
     </section>

@@ -1,32 +1,73 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 12px 0;
+    position: relative;
+    padding: 10px 0 12px;
     margin-bottom: 12px;
 
     .logo-container {
         width: 43px;
 
-        span {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 10px;
+        .logo {
+            @include font(10px, 1.37, $weight-regular, $black);
             display: block;
-            line-height: 1.37;
-            color: #000;
             text-transform: uppercase;
         }
     }
 
     .page-title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        color: $project-red;
+        @include font(18px, 24px, $weight-regular, $project-red);
     }
 
-    .collections__menu-button {
+    .hamburger__menu-button {
         background-color: transparent;
         cursor: pointer;
         border: 0;
+
+        .hamburger-menu {
+            @include icon-mask('menu.svg');
+            display: inline-block;
+            width: 24px; 
+            height: 24px;
+            background-color: $black;
+            vertical-align: middle;
+
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .header {
+        .page-title {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .header {
+        align-items: center;
+        padding: 24px 0;
+        margin-bottom: 24px;
+
+        .logo-container {
+            width: 80px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .page-title {
+            font-size: 36px;
+        }
+
+        .hamburger__menu-button {
+            display: none;
+        }
     }
 }
