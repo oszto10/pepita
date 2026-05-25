@@ -10,15 +10,24 @@
         position: relative;
 
         .collections__search {
+            @include font(18px, 32px, $weight-regular, $project-red);
             border: 1px solid $project-red;
             margin-bottom: 6px;
             min-width: 248px;
-            padding: 12px 8px 12px 10px;
+            padding: 7px 8px 7px 10px;
             width: 100%;
+
+            &:focus {
+                outline: none; 
+            }
 
             &::placeholder {
                 @include font(18px, 32px, $weight-regular, $project-red);
             }
+        }
+
+        .collections__search-label {
+            display: none;
         }
 
         .collections__search-button {
