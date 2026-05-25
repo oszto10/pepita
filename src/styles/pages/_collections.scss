@@ -57,7 +57,10 @@
         width: 100%;
 
         .collections__image {
+            aspect-ratio: 165 / 124;
+            display: block;
             margin-bottom: 6px;
+            object-fit: cover;
             width: 100%;
         }
 
@@ -76,9 +79,16 @@
     .collections__item-container {
         grid-template-columns: repeat(3, 1fr);
 
-        .collections__title {
-            font-size: 16px;
-            line-height: 22px;
+
+        .collections__item {
+            .collections__title {
+                font-size: 16px;
+                line-height: 22px;
+
+                &.narrow {
+                    max-width: 100%;
+                }
+            }
         }
     }   
 
@@ -103,9 +113,11 @@
     .collections__item-container {
         gap: 24px;
 
-        .collections__title {
-            font-size: 24px;
-            line-height: 28px;
+        .collections__item {
+            .collections__title {
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
     }   
 

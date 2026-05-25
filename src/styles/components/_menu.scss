@@ -72,16 +72,21 @@
         }
 
         .collections__search-label {
-            @include font(18px, 22px, $weight-regular, $white);
             left: 58px;
             position: absolute;
             top: 10px;
+            visibility: hidden;
         }
 
         .collections__search-input {
             background-color: $project-red;
             border: 2px solid $white-border;
             height: 42px;
+
+            &::placeholder {
+                @include font(18px, 22px, $weight-regular, $white);
+                color: $white;
+            }
         }
     }
 }
